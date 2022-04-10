@@ -27,7 +27,7 @@ async function main() {
 
   for (let page = 1; page < 1000; page++) {
     const result = await client.search.messages({
-      query: "in:youtuber from:slackbot",
+      query,
       sort: "timestamp",
       sort_dir: "asc",
       page,
